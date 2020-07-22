@@ -1,24 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Kohiso Web Admin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="adminhome.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Product
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="additem.php">Add Item</a>
-          <a class="dropdown-item" href="addadmin.php">Add Admin</a>
-          <a class="dropdown-item" href="adminuser.php">Admin User</a>
+<nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="adminhome.php">Kohiso Web Admin</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.php#content1">Content1</a></li>
+                    <li><a href="home.php#content2">Content2</a></li>
+                    <li><a href="home.php#content3">Content3</a></li>
+                    <li><a href="home.php#content4">Content4</a></li>
+                    <li><a href="home.php#content5">Content5</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">LOGIN<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.php">LOGIN</a></li>
+                            <li><a href="masterlogin.php">MASTER LOGIN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+    </nav>
