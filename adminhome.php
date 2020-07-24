@@ -11,12 +11,7 @@ require "setting_navbar.php";
                         <h1>
                             <i class="fa fa-home fa-fw"></i> Homepage Admin Kohiso
                         </h1>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item active" aria-current="page">
-                                Dashboard
-                            </li>
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        </ol>
+                        <br>
                     </div>
                 </div>
 

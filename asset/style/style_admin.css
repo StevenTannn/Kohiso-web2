@@ -1,4 +1,14 @@
 /*start form login*/
+
+:root {
+    --cream1: #F2E1D9;
+    --cream2: #F4E1DB;
+    --purple: #60184C;
+    --brown: #C4A099;
+    --light: #FFF8DF;
+}
+
+
 .bodylogin{
     background : #FFF;
     background: url("../img/coffee.png") no-repeat;
@@ -6,32 +16,23 @@
     margin-top:0;
 }
 .login{
+    background-color: var(--cream2);
+    color: var(--purple);
     width:450px;
-      min-height:100px;
-      border:#D9534F solid 1px;
-      background:rgba(255,255,255,0.6);
-      padding:20px;
-      margin:250px auto;
-      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    min-height:100px;
+    padding: 3rem;
+    margin: 250px auto;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
 }
 .login i{
-    color:#003399;
+    color: var(--purple);
 }
-.login h1{
-        font-size:28px;
-        color:#fff;
-        text-align:center;
-        font-family: Times New Roman, Roboto;
-        height:50px;
-        width:100%;
-        background:#385bc3;
-        line-height:50px;
-}
-.formlogin{
-    background:#0396;
-    padding:15px;
-}
-
+.login form div input {
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--light);
+} 
 @media(max-width:450px) {
     .login{
       width:300px;
@@ -54,3 +55,4 @@ body {
     padding: 0;
     background-color: #fff;
 }
+

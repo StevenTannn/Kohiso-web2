@@ -1,6 +1,8 @@
 <?php
-  require 'functions.php';
-
+  session_start();
+    error_reporting(0);
+    require 'functions.php';
+    include "security.php";
 
   $id = $_GET["id"];
 

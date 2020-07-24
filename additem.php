@@ -1,5 +1,9 @@
 <?php
-  require 'functions.php';
+    session_start();
+    error_reporting(0);
+    require 'functions.php';
+    include "security.php";
+
  ?>
 
  <!DOCTYPE html>

@@ -45,7 +45,8 @@ body {
 
 .kohiso-btn:hover {
     background-color: var(--brown);
-    transition-duration: 0.5s;
+    color: var(--light);
+    transition-duration: 0.3s;
 }
 
 .purple-bg {

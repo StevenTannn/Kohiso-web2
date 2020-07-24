@@ -53,46 +53,48 @@ if(isset($_SESSION["data_admin"]))
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Custom styles template ini-->
         <link href="asset/style/style_admin.css" rel="stylesheet" type="text/css" media="all">
+        <link href="asset/style/style.css" rel="stylesheet" type="text/css" media="all">
         <!-- Custom Fonts Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
 
     </head>
     <body class="bodylogin">
-    <div class="container"> <!-- start container -->
-         <div class="row"><!-- start row -->
-              <div class="col-lg-12"><!-- start col lg 12-->
-                   <div class="login"><!-- start class login -->
-                        <h1>LOGIN ADMIN WEB KOHISO</h1>
-                   <!-- start form login -->
-                   <form action="" method="post" class="formlogin">
-                   <div class="form-group row"><!--start form-group-->
-                        <label class="col-lg-3">Username </label>
-                        <div class="col-lg-8 input-group input-group-sm"><span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                        <input type="text" name="username" placeholder="username" class="form-control" maxlength="40" value="<?php echo $_POST['username'];?>" autofocus>
-                        </div>
-                   </div><!--/form-group-->
-
-                   <?php echo $er_email;?>
-                   <div class="form-group row"><!--start form-group-->
-                        <label class="col-lg-3">Password</label>
-                        <div class="col-lg-8 input-group  input-group-sm">
-                        <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
-                        <input id="pass1" type="password" name="password" placeholder="Password" class="form-control" value="<?php echo $_POST['password'];?>" maxlength="15">
-                        </div>
+      <div class="container"> <!-- start container -->
+           <div class="row"><!-- start row -->
+                <div class="col-lg-12"><!-- start col lg 12-->
+                    <div class="login rounded"><!-- start class login -->
+                      <h3>LOGIN ADMIN WEB KOHISO</h3>
+                      <!-- start form login -->
+                      <form action="" method="post">
+                        <div class="form-group row"><!--start form-group-->
+                            <label class="col-lg-3">Username</label>
+                            <div class="col-lg-8 input-group input-group-sm">
+                              <span class="input-group-addon px-2"><i class="fa fa-user fa-fw"></i></span>
+                              <input type="text" name="username" placeholder="username" class="input-admin form-control " maxlength="40" value="<?php echo $_POST['username'];?>" autofocus>
+                            </div>
                         </div><!--/form-group-->
-                   <?php echo $er_pass;?>
 
-                   <button class="btn btn-primary btn-block" type="submit" name="login">Log In</button>
+                        <?php echo $er_email;?>
+                        <div class="form-group row"><!--start form-group-->
+                            <label class="col-lg-3">Password</label>
+                            <div class="col-lg-8 input-group  input-group-sm">
+                              <span class="input-group-addon px-2"><i class="fa fa-lock fa-fw"></i></span>
+                              <input id="pass1" type="password" name="password" placeholder="password" class="form-control input-admin" value="<?php echo $_POST['password'];?>" maxlength="15">
+                            </div>
+                        </div><!--/form-group-->
+                        <?php echo $er_pass;?>
 
-                   </form>
-                   <!-- end form login -->
-		</div><!-- end class login -->
-	</div><!-- end col lg 12 -->
- </div><!-- end row -->
-</div><!-- end container -->
+                        <div class="text-center"><button class="btn kohiso-btn  w-50" type="submit" name="login">Log In</button></div>
+
+                      </form>
+                       <!-- end form login -->
+  		              </div><!-- end class login --> 
+              </div><!-- end col lg 12 -->
+          </div><!-- end row -->
+      </div><!-- end container -->
     </body>
 </html>

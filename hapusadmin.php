@@ -1,5 +1,8 @@
 <?php
-require 'functions.php';
+session_start();
+    error_reporting(0);
+    require 'functions.php';
+    include "security.php";
 $name = $_GET["id"];
 
 if(deleteAdmin($name) > 0 ){

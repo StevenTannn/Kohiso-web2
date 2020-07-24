@@ -17,36 +17,7 @@
             <img src="asset/img/head.png">
         </div>
         <div class='container-main'>
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="asset/img/Logo.png" class='logo'>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href=shop.html>SHOP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="press.html">PRESS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gift.html">EGIFT CARDS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-light" href="sign">SIGN IN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-light" href="register">JOIN NOW</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <?php include "navbar.php" ?>
 
             <div class="head-title">
                 <h1>EGIFT CARDS</h1>
