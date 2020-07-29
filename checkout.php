@@ -1,5 +1,6 @@
 <?php
  require 'functions.php';
+  include "security.php";
  $results = fetchData("SELECT * FROM checkout ORDER BY status");
  $i = 1;
  ?>
