@@ -37,7 +37,7 @@ $items = fetchData("SELECT * FROM item");
 
               <?php foreach ($items as $item): ?>
                 <form action="addcart.php" method="post">
-                  <div class="product card mx-3 my-3" style="height:35vh">
+                  <div class="product card mx-3 my-3">
                       <img src="<?php echo show_img($item['id']) ?>" class='product-img' height="100%">
                       <div class="product-detail">
                           <h3><?= $item["name"] ?></h3>
