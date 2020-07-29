@@ -52,29 +52,35 @@
     <div class="col-10 tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
         <div class="row" style="color: black; margin: 100px; margin-top: 0">
+          <div class="col-2 mb-5">
+            <img src="asset/img/user.png" class="w-100">
+          </div>
+          <div class="col-8 mb-5" style="align-self: center;">
+            <h5>My Profile</h5>
+          </div>
           <div class="col-4 mb-3 py-1">
             <h5>Name</h5>
           </div>
           <div class="col-5">
-            <h4 class="w-100 rounded border px-3 py-1 m-0"><?= $user["FirstName"] . " " . $user["LastName"] ?></h4>
+            <h5 class="w-100 rounded border px-3 py-1 m-0"><?= $user["FirstName"] . " " . $user["LastName"] ?></h5>
           </div>
           <div  class="col-4 mb-3 py-1">
             <h5>Phone Number</h5>
           </div>
           <div class="col-5">
-            <h4 class="w-100 rounded border px-3 py-1 m-0"><?= $user["PhoneNum"] ?></h4>
+            <h5 class="w-100 rounded border px-3 py-1 m-0"><?= $user["PhoneNum"] ?></h5>
           </div>
           <div  class="col-4 mb-3 py-1">
             <h5>Gender</h5>
           </div>
           <div class="col-5">
-            <h4 class="w-100 rounded border px-3 py-1 m-0"><?= $user["Gender"] ?></h4>
+            <h5 class="w-100 rounded border px-3 py-1 m-0"><?= $user["Gender"] ?></h5>
           </div>
           <div  class="col-4 mb-3 py-1">
             <h5>Address</h5>
           </div>
           <div class="col-5">
-            <h4 class="w-100 rounded border px-3 py-1 m-0"><?= $user["Address"] ?></h4>
+            <h5 class="w-100 rounded border px-3 py-1 m-0"><?= $user["Address"] ?></h5>
           </div>
         </div>
       </div>
@@ -108,7 +114,10 @@
               <?php endforeach; ?>
 
               <?php if ($items == null): ?>
-                <h1>Your cart is empty</h1>
+                <div class="w-100 text-center">
+                  <img style="width: 150px" src="asset/img/cart-empty.png">
+                  <h5 class="mt-4">Your cart is empty. Let's go <a class="text-primary" href="shop.php">shopping</a></h5>
+                </div>
               <?php endif; ?>
 
 
@@ -139,6 +148,12 @@
               </div>
             </div>
           <?php endforeach; ?>
+          <?php if ($transactions == null): ?>
+            <div class="w-75 text-center">
+              <img style="width: 150px" src="asset/img/transaction.png">
+              <h5 class="mt-4">Your have no transaction. Let's go <a class="text-primary" href="shop.php">shopping</a></h5>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
       <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>

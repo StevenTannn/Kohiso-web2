@@ -60,9 +60,9 @@
                         <input type="hidden" name="harga" value="<?= $result["harga"]  ?>">
                         <input type="hidden" name="status" value="<?= $result["status"]  ?>">
                         <?php $delete = false; ?>
-                        <button class="btn btn-sm btn-outline-dark mr-2" type="submit" name="kirim">Send</button>
-                        <button class="btn btn-sm btn-outline-dark mr-2" type="submit" name="batal">Cancel</button>
-                        <button class="btn btn-sm btn-outline-dark mr-2" type="submit" name="hapus">Erase</button>
+                        <button class="btn btn-sm btn-outline-primary mr-2" type="submit" name="kirim">Send</button>
+                        <button class="btn btn-sm btn-outline-warning mr-2" type="submit" name="batal">Cancel</button>
+                        <button class="btn btn-sm btn-outline-danger mr-2" type="submit" name="hapus">Erase</button>
                       </form>
                       </td>
                     </tr>
@@ -80,7 +80,6 @@
               echo "
               <script>
                 alert ('Sucess to erase transaction')
-                document,location.href = 'checkout.php';
                 document location.href = 'checkout.php';
               </script>
               ";
@@ -98,16 +97,15 @@
           if (kirim($_GET)>0) {
             echo "
             <script>
-              alert ('Transaction status has been changed to send')
-              document,location.href = 'checkout.php';
+              alert ('Transaction status has been changed to sent')
               document.location.href = 'checkout.php';
             </script>
             ";
           }else {
             echo "
               <script>
-                alert('Transaction status has been changed to send')
-                document,location.href = 'checkout.php';
+                alert('Error while changing status')
+                document.location.href = 'checkout.php';
               </script>
             ";
           }
@@ -117,16 +115,14 @@
           if (batal($_GET)>0) {
             echo "
             <script>
-              alert ('Transaction status has been changed to cancel')
-              document,location.href = 'checkout.php';
+              alert ('Transaction status has been changed to canceled')
               document.location.href = 'checkout.php';
             </script>
             ";
           }else {
             echo "
               <script>
-                alert('Transaction status has been changed to cancel')
-                document,location.href = 'checkout.php';
+                alert('Error while changing status')
                 document.location.href = 'checkout.php';
               </script>
             ";

@@ -72,6 +72,7 @@ a:hover{
     color: var(--light);
 }
 
+
 .nav-link {
     color: var(--light)
 }
@@ -252,6 +253,11 @@ a.us {
     width: 100%;
     padding: 1rem;
     bottom: 0;
+}
+.prd-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .product-img {

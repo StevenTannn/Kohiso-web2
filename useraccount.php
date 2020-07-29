@@ -54,10 +54,10 @@
             <tr>
               <th scope="row"><?= $i; ?></th>
               <td>
-                <button class="btn btn-sm btn-outline-dark mr-2 mb-2 w-75" onclick="window.location.href='editUser.php?id=<?= $item['id'] ?>'">Edit</button>
+                <button class="btn btn-sm btn-outline-primary mr-2 mb-2 w-75" onclick="window.location.href='editUser.php?id=<?= $item['id'] ?>'">Edit</button>
                 <form class=""  method="post" onsubmit="return confirm('Are you sure to delete this user ?');">
                   <input type="hidden" name="id" value="<?= $item["id"]  ?>">
-                  <button type="submit" class="btn btn-sm btn-outline-dark w-75" name="delete">Delete</button>
+                  <button type="submit" class="btn btn-sm btn-outline-danger w-75" name="delete">Delete</button>
                 </form>
 
               </td>
