@@ -51,8 +51,8 @@
             <tr>
               <th scope="row"><?= $i; ?></th>
               <td>
-                <button class="btn btn-sm btn-outline-dark w-25 mr-2" onclick="window.location.href='gantiadmin.php?id=<?= $item['id'] ?>'">Edit</button>
-                <a class="btn btn-sm btn-outline-dark w-25" onclick="javascript: return confirm('Menghapus ?');" href="hapusadmin.php?id=<?= $item['id'] ?>">Delete</a>
+                <button class="btn btn-sm btn-outline-primary w-25 mr-2" onclick="window.location.href='gantiadmin.php?id=<?= $item['id'] ?>'">Edit</button>
+                <a class="btn btn-sm btn-outline-danger w-25" onclick="javascript: return confirm('Menghapus ?');" href="hapusadmin.php?id=<?= $item['id'] ?>">Delete</a>
 
               </td>
               <?= "<td>".$item['id']."</td>" ?>

@@ -210,7 +210,7 @@ $hostname="http://localhost/kohiso-web2/";
       username ='$username' ,
       nama = '$nama' ,
       harga = '$harga',
-      status = 'terkirim'
+      status = 'sent'
       WHERE id = $id ";
 
       mysqli_query($conn,$query);
@@ -230,7 +230,7 @@ $hostname="http://localhost/kohiso-web2/";
       username ='$username' ,
       nama = '$nama' ,
       harga = '$harga',
-      status = 'batal'
+      status = 'denied'
       WHERE id = $id ";
 
       mysqli_query($conn,$query);

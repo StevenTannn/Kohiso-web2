@@ -42,12 +42,10 @@ $items = fetchData("SELECT * FROM item");
                       <div class="product-detail">
                           <h3><?= $item["name"] ?></h3>
                           <p class="mt-2">Rp.<?= $item["harga"] ?></p>
-                          <div class="d-flex justify-content-between">
-                            <small><?= $item["deskripsi"] ?></small>
-                            <input type="hidden" name="name" value="<?= $item["name"] ?>">
-                            <input type="hidden" name="harga" value="<?= $item["harga"] ?>">
-                            <button type="submit" name="addtocart" class="btn btn-sm kohiso-btn">Add To Cart</button>
-                          </div>
+						  <div style="width: 160px;"><small><?= $item["deskripsi"] ?></small></div>
+						  <input type="hidden" name="name" value="<?= $item["name"] ?>">
+						  <input type="hidden" name="harga" value="<?= $item["harga"] ?>">
+                          <button type="submit" name="addtocart" class="btn btn-sm kohiso-btn prd-btn">Add To Cart</button>
                       </div>
                   </div>
                 </form>
